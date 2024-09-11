@@ -20,6 +20,6 @@ def calculator_input():
             print(f"ค่าเก็บอยู่: {' '.join(inputs)}")
         else:
             print("ค่าที่ป้อนไม่ถูกต้อง กรุณาป้อนเฉพาะตัวเลข 0-9 หรือตัวดำเนินการ (+, -, *, /, (, ))")
-
-print("ลองเพิ่มดู")
+print("Again")
+print("ลองเพิ่มดูอีกรอบ")
 calculator_input()
