@@ -57,7 +57,9 @@ getValue.pack(fill=BOTH, expand=True,padx=3,pady=3)
 # การสร้างปลุ่มโดยใช้ button fg="กำหนดสีคัวอักษร"  bg="กำหนดสีพื้นหลัง" text="ใช้เขียนข้อความ" font=ใช้กำหนดลักษณะตัวอักษร
 # ใช้งาน command สำเร็จรูปคือ lambda เป็นการสร้างฟังก์ชั่น นิรนาม เพื่อรับค่า และส่งค่าไปยังฟังก์ชั่น เพื่อลดการซ้ำซ้อนของโปรแกรม ใน Program นี้คือ Function append_value() เมื่อกดปุ่มแล่วส่งค่าให้กับ Entry ที่รับค่า โดยไม่ต้องสร้างฟังก์ชั่นแยกสำหรับปุ่ม หลายๆ ค่า
 
-# แถวที่ 1 ปุ่ม c , <-
+# แถวที่ 1 ปุ่ม (, ), c , <-
+bt_open_p = Button(button_frame,text="(",font=button_font,width=4, command=lambda: append_value("(")).grid(row=1, column=0, sticky="nsew")
+bt_close_p = Button(button_frame,text=")",font=button_font,width=4, command=lambda: append_value(")")).grid(row=1, column=1, sticky="nsew")
 clear = Button(button_frame,text="C",font=button_font,width=4, command=lambda: clear_value()).grid(row=1, column=2, sticky="nsew")
 delete_lastValue = Button(button_frame,text="<-",font=button_font,width=4, command=lambda: delete_last_character()).grid(row=1, column=3, sticky="nsew")
 
