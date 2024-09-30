@@ -54,4 +54,3 @@ def calculate(expression):
     return operand_stack[-1]
 
 print(calculate("2+0.3"))
-print(len("2+0.3"))
